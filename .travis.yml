@@ -30,9 +30,9 @@ script:
  - cd ./build
  - if [ "$COVERITY_SCAN_BRANCH" != 1 ]; then ${ANALYZE}make -j3; fi
 
-notifications:
-  irc:    
-    channels:
-      - "chat.freenode.net#wildmidi"
-    on_success: change
-    on_failure: always    
+#notifications:
+#  irc:    
+#    channels:
+#      - "chat.freenode.net#wildmidi"
+#    on_success: change
+#    on_failure: always    
